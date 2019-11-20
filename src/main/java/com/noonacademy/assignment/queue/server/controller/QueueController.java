@@ -1,6 +1,7 @@
-package com.noonacademy.assignment.controller;
+package com.noonacademy.assignment.queue.server.controller;
 
-import com.noonacademy.assignment.service.QueueManagerService;
+import com.noonacademy.assignment.queue.server.service.QueueManagerService;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,7 @@ public class QueueController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "enqueue")
-    public void enqueue(String entry) {
+    public void enqueue(@RequestBody String entry) {
         queueManagerService.enqueue(entry);
     }
 

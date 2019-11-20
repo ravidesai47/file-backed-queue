@@ -1,4 +1,4 @@
-package com.noonacademy.assignment.service;
+package com.noonacademy.assignment.queue.server.service;
 
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.slf4j.Logger;
@@ -93,7 +93,7 @@ public class QueueManagerService {
 
         startIndex++;
         String entryFileName = queuePersistenceDirectory + "/" + startIndex;
-        String entry = null;
+        String entry;
         try {
             entry = filePersistenceService.readEntryAndDeleteFile(entryFileName);
         } catch (IOException e) {

@@ -1,4 +1,4 @@
-package com.noonacademy.assignment.service;
+package com.noonacademy.assignment.queue.server.service;
 
 import com.google.common.base.Charsets;
 import org.apache.commons.io.FileUtils;
