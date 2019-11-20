@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project provides a file backed queue which is accessible through RestFul Services and Client API. 
-Enqueue and Dequeue operations are supported through RestFul Service.
-Using Client API makes it easy to access queue through different configurations like retry mechanism, sync and async access, polling queue for new entries, etc...
+* This project provides a file backed queue which is accessible through RestFul Services and Client API. 
+* Enqueue and Dequeue operations are supported through RestFul Service.
+* Using Client API makes it easy to access queue through different configurations like retry mechanism, sync and async access, polling queue for new entries, etc...
 
 ## Frameworks and Libraries
 
