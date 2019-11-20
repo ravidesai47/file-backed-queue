@@ -33,3 +33,4 @@
 * Go to http://localhost:3456/swagger-ui.html
 * Click on queue-controller
 * Perform relevant operations on queue from that screen to test the server
+* To enable debug logging add JVM Parameter _-Dlogging.config=classpath:logback-debug.xml_
