@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project provides a file backed queue server. Client's can enqueue data to the queue or they can dequeue/fetch data from the queue.
+This project provides a file backed queue which is accessible through RestFul Services and Client API. 
+Enqueue and Dequeue operations are supported through RestFul Service.
+Using Client API makes it easy to access queue through different configurations like retry mechanism, sync and async access, polling queue for new entries, etc...
 
 ## Frameworks and Libraries
 
@@ -10,10 +12,11 @@ This project provides a file backed queue server. Client's can enqueue data to t
 * Spring Boot for configuring and running restful web service
 * Logback for console and file based logging
 * Spring Fox (Swagger 2) for API Documentation and manual testing
+* Apache Commons IO for easy file read/write and access
 
 ## Rest API Documentation
 
-**Link:** http://localhost:3456/swagger-ui.html
+**Link to Swagger:** http://localhost:3456/swagger-ui.html
 
 * POST /queue/enqueue
    * Use this method to enqueue an element on queue server
@@ -21,7 +24,7 @@ This project provides a file backed queue server. Client's can enqueue data to t
 * GET /queue/dequeue
    * Use this method to dequeue an element from queue server
 
-## How to start queue server
+## How to start queue server on Local Machine
 
 * Open pom.xml file in IDE (Eclipse/IntelliJ)
 * Resolve maven dependencies
